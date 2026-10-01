@@ -1,0 +1,128 @@
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background: var(--color-primary);
+  color: var(--color-aluminium-light);
+  padding-block: var(--space-7) 0;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr;
+  gap: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+@media (max-width: 1023px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__brand {
+    grid-column: auto;
+  }
+}
+
+.footer__name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-white);
+}
+
+.footer__sub {
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-aluminium);
+  margin-top: 2px;
+}
+
+.footer__tagline {
+  margin-top: var(--space-4);
+  font-size: 0.92rem;
+  color: var(--color-aluminium);
+}
+
+.footer h3 {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: var(--space-4);
+}
+
+.footer__links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links a {
+  color: var(--color-aluminium-light);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color var(--transition-fast);
+}
+
+.footer__links a:hover {
+  color: var(--color-white);
+}
+
+.footer__contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: var(--space-3);
+  font-size: 0.95rem;
+}
+
+.footer__contact svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: var(--color-aluminium);
+}
+
+.footer__contact a,
+.footer__contact button {
+  color: var(--color-aluminium-light);
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__contact a:hover,
+.footer__contact button:hover {
+  color: var(--color-white);
+}
+
+.footer__address span {
+  display: block;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-block: var(--space-4);
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--color-aluminium);
+}

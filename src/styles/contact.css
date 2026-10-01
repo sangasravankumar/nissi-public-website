@@ -1,0 +1,124 @@
+/* ============================================
+   CONTACT
+   ============================================ */
+
+.contact__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 1023px) {
+  .contact__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .contact__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-6) var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.contact__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(47, 95, 159, 0.1);
+  color: var(--color-secondary);
+}
+
+.contact__icon--whatsapp {
+  background: rgba(37, 211, 102, 0.12);
+  color: var(--color-whatsapp-dark);
+}
+
+.contact__card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.contact__value {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-text);
+}
+
+.contact__value--small {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.contact__card .btn {
+  margin-top: var(--space-2);
+}
+
+.contact__cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+/* ============================================
+   FINAL CTA
+   ============================================ */
+
+.final-cta {
+  padding-block: var(--space-8);
+  background:
+    linear-gradient(rgba(23, 32, 51, 0.88), rgba(23, 32, 51, 0.94)),
+    url('/images/hero.jpg') center / cover no-repeat;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.final-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4.4vw, 2.8rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.final-cta p {
+  margin-top: var(--space-3);
+  font-size: 1.05rem;
+  color: var(--color-aluminium-light);
+}
+
+.final-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 767px) {
+  .final-cta {
+    padding-block: var(--space-7);
+  }
+}
